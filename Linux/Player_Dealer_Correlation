@@ -1,0 +1,49 @@
+Analysis of the player data indicates that there were 13 instances of losses which occured on the following dates and times. 
+
+Date: 0310
+05:00:00 AM Mylie Schmidt
+08:00:00 AM Mylie Schmidt
+02:00:00 PM Mylie Schmidt
+08:00:00 PM Mylie Schmidt
+11:00:00 PM Mylie Schmidt
+
+Date: 0312 
+05:00:00 AM Mylie Schmidt
+08:00:00 AM Mylie Schmidt
+02:00:00 PM Mylie Schmidt
+
+Date: 0315
+05:00:00 AM Mylie Schmidt
+08:00:00 AM Mylie Schmidt
+02:00:00 PM Mylie Schmidt
+08:00:00 PM Mylie Schmidt
+11:00:00 PM Mylie Schmidt
+
+13 Instances
+
+Data also indicates that Mylie Schmidt was playing at every time a loss occurred on each of the days, March 10th, 12th, and the 15th. 
+
+An analysis of the dealer data indicates that dealer Billy Jones was the only dealer who worked on all 13 times over the course of the three days when losses occured. This coinciding exactly with the days and times Mylie Schmidt was playing. 
+
+0310
+05:00:00 AM Billy Jones
+08:00:00 AM Billy Jones
+02:00:00 PM Billy Jones
+08:00:00 PM Billy Jones
+11:00:00 PM Billy Jones
+
+0312
+05:00:00 AM Billy Jones
+02:00:00 PM Billy Jones
+08:00:00 AM Billy Jones
+
+0315
+05:00:00 AM Billy Jones
+08:00:00 AM Billy Jones
+08:00:00 PM Billy Jones
+02:00:00 PM Billy Jones
+11:00:00 PM Billy Jones
+
+13 Instances
+
+In conclusion it would appear that player Mylie Schmidt and dealer Billy Jones are working together to scam Lucky Duck.
