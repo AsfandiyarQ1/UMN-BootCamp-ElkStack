@@ -124,7 +124,7 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - Playbook can be downloaded using the 
-[Install Filebeat](curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat)
+'[FileBeat Gist](https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat)
 - update hosts file within /etc/ansible and include the IPs of the Webservers
 - http://elk.piblic.ip]:5601/app/kibana
 
