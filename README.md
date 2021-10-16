@@ -107,11 +107,11 @@ Install Python-pip
    
  Increase virtual memory
  - name: Use more memory
- -  sysctl:
- -    name: vm.max_map_count
- -     value: '262144'
- -     state: present
- -     reload: yes
+    sysctl:
+      name: vm.max_map_count
+      value: '262144'
+      state: present
+      reload: yes
  
  Download and launch Elk docker container 
  
