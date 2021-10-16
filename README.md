@@ -80,7 +80,7 @@ The playbook implements the following tasks:
 Specifies what to install
 
 - SSH into the Jump-Box-Provisioner
-- Start/Attached to the ansible docker 
+- Start and Attache to the ansible docker "sharp_mendeleev"
 - Go to /etc/ansible/roles directory and create the ELK playbook
 - Ran the Elk_Playbook.yml in that same directory. ELK playbook [install-elk.yml](https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Ansible/Install-Elk.yml)
 
@@ -101,7 +101,7 @@ Specifies what to install
     - Download and launch Elk docker container 
 
 
-- SSH into the ELK-VM to verify the server is up and running.
+- SSH into the ELK-VM to verify the server is runnin
 
    
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
