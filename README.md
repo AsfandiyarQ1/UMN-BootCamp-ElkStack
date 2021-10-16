@@ -38,7 +38,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat collects metrics on the operating systems and services running on the network for analysis
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name                | Function                                           | Local IP  | Public IP      | Operating System        |
 |---------------------|----------------------------------------------------|-----------|----------------|-------------------------|
@@ -76,7 +76,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 Ansible allows a user to quickly deploy and easily deploy multiple applications through a playbook.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
 Specifies what to install
 
 - SSH into the Jump-Box-Provisioner
@@ -130,10 +130,8 @@ SSH into the control node and follow the steps below:
 - Update the config file to include remote users and ports
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - Playbook can be downloaded using the 
 '[FileBeat Gist](https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat)
 - update hosts file within /etc/ansible and include the IPs of the Webservers
 - '[To Test Test Kibana](http://elk.piblic.ip]:5601/app/kibana)
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
