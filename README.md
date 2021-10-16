@@ -82,7 +82,7 @@ Specifies what to install
 - SSH into the Jump-Box-Provisioner
 - Start/Attached to the ansible docker 
 - Go to /etc/ansible/roles directory and create the ELK playbook
-- Ran the Elk_Playbook.yml in that same directory [install-elk.yml](https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Ansible/Install-Elk.yml)
+- Ran the Elk_Playbook.yml in that same directory. ELK playbook [install-elk.yml](https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Ansible/Install-Elk.yml)
 
   - The Elk installation playbook does the following: 
 
