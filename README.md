@@ -98,7 +98,7 @@ The Elk installation playbook does the following:
    
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Docker ps screenshot] (https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Ansible/docker_ps_output.JPG)
+![Docker ps screenshot](https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Ansible/docker_ps_output.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
