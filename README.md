@@ -79,9 +79,9 @@ The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 Specifies what to install
 - name: Config elk VM with Docker
-    hosts: elk
-    become: true
-    tasks:
+   hosts: elk
+   become: true
+   tasks:
 
 Install Docker 
 - name: Install docker.io
