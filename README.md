@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![RedTeam Network] (https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Diagrams/Week%2012%20Homework%20-%20Cloud%20Security.JPG?raw=true)
+[![RedTeam Network](https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Diagrams/Week%2012%20Homework%20-%20Cloud%20Security.JPG?raw=true)
 
 ![ElkStack Network] (https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Diagrams/ELkStackProject.JPG?raw=true)
 
