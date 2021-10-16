@@ -79,51 +79,51 @@ The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 Specifies what to install
 - name: Config elk VM with Docker
-   #hosts: elk
-   become: true
-   tasks:
+-   hosts: elk
+-   become: true
+-   tasks:
 
 Install Docker 
 - name: Install docker.io
-    apt:
-      update_cache: yes
-      force_apt_get: yes
-      name: docker.io
-      state: present
+-   apt:
+-    update_cache: yes
+-    force_apt_get: yes
+-    name: docker.io
+-    state: present
 
 Install Python-pip
 - name: Install python3-pip
-    apt:
-      force_apt_get: yes
-      name: python3-pip
-      state: present
+-   apt:
+-     force_apt_get: yes
+-     name: python3-pip
+-     state: present
 
-    # Use pip module (It will default to pip3)
+ # Use pip module (It will default to pip3)
   - name: Install Docker module
-    pip:
-      name: docker
-      state: present
-      `docker`, which is the Docker Python pip module
+  -   pip:
+  -     name: docker
+  -     state: present
+  -     docker`, which is the Docker Python pip module
    
  Increase virtual memory
  - name: Use more memory
-   sysctl:
-     name: vm.max_map_count
-     value: '262144'
-     state: present
-     reload: yes
+ -  sysctl:
+ -    name: vm.max_map_count
+ -     value: '262144'
+ -     state: present
+ -     reload: yes
  
  Download and launch Elk docker container 
  
 - name: Download and launch a docker elk container
-   docker_container:
-     name: elk
-     image: sebp/elk:761
-     state: started
-     restart_policy: always
-     
- Available ports
- published_ports:
+- docker_container:
+-    name: elk
+-    image: sebp/elk:761
+-    state: started
+-    restart_policy: always
+-    
+- Available ports
+- published_ports:
        -  5601:5601
        -  9200:9200
        -  5044:5044   
