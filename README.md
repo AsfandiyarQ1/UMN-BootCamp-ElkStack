@@ -78,56 +78,24 @@ Ansible allows a user to quickly deploy and easily deploy multiple applications 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 Specifies what to install
-- name: Config elk VM with Docker
-     hosts: elk
-     become: true
-     tasks: 
 
-Install Docker 
-- name: Install docker.io
-  - apt:
-   - update_cache: yes
-   - force_apt_get: yes
-   - name: docker.io
-   - state: present
+The Elk installation playbook does the following: 
 
-Install Python-pip
-- name: Install python3-pip
--   apt:
--     force_apt_get: yes
--     name: python3-pip
--     state: present
+- Install docker.io - The Docker engine, used for running containers.
 
- # Use pip module (It will default to pip3)
-  - name: Install Docker module
-  -   pip:
-  -     name: docker
-  -     state: present
-  -     docker`, which is the Docker Python pip module
+- Install python3-pip - This is the package manager used to install Python Software.
+
+- Install docker - (this is the Docker Python pip module)
+
+- Increase Virtual Memory - This increases virtual memory in the Elk container.
+
+- Download and Launch Elk Docker Container - This will download and start the sepb/elk:716 container on the Elk machine. 
+
+- Enable Docker System Service on Boot - This tells Docker to enable on boot-up.
+ 
+ - Download and launch Elk docker container 
+
    
- Increase virtual memory
- - name: Use more memory
-    sysctl:
-      name: vm.max_map_count
-      value: '262144'
-      state: present
-      reload: yes
- 
- Download and launch Elk docker container 
- 
-- name: Download and launch a docker elk container
-- docker_container:
--    name: elk
--    image: sebp/elk:761
--    state: started
--    restart_policy: always
--    
-- Available ports
-- published_ports:
-       -  5601:5601
-       -  9200:9200
-       -  5044:5044   
-    
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![Docker ps screenshot] (https://github.com/AsfandiyarQ1/UMN-BootCamp-ElkStack/blob/main/Ansible/docker_ps_output.JPG)
