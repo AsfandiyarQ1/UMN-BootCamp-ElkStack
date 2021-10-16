@@ -82,12 +82,12 @@ Specifies what to install
 The Elk installation playbook does the following: 
 
 Specifices what to install
----
+[![---
 - name: Configure Elk VM with Docker
   hosts: elk
   remote_user: enter_user_name
   become: true
-  tasks:
+  tasks:]
   
   
     # Use apt module
