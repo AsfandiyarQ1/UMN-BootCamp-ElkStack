@@ -83,9 +83,9 @@ The Elk installation playbook does the following:
 
 - Install docker.io - The Docker engine, used for running containers.
 
-- Install python3-pip - This is the package manager used to install Python Software.
+- Install python3-pip - This will install Python Software.
 
-- Install docker - (this is the Docker Python pip module)
+- Install docker - this will install the Docker Python pip module
 
 - Increase Virtual Memory - This increases virtual memory in the Elk container.
 
