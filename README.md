@@ -85,11 +85,11 @@ Specifies what to install
 
 Install Docker 
 - name: Install docker.io
--   apt:
--    update_cache: yes
--    force_apt_get: yes
--    name: docker.io
--    state: present
+  - apt:
+   - update_cache: yes
+   - force_apt_get: yes
+   - name: docker.io
+   - state: present
 
 Install Python-pip
 - name: Install python3-pip
