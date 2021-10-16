@@ -79,23 +79,28 @@ The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 Specifies what to install
 
-The Elk installation playbook does the following: 
+- SSH into the Jump-Box-Provisioner
+- Start/Attached to the ansible docker 
+- Go to /etc/ansible/roles directory and create the ELK playbook
+- Ran the Elk_Playbook.yml in that same directory 
+  - The Elk installation playbook does the following: 
 
-Specifices what to install
+    - Install docker.io - Installs the Docker engine, used for running containers.
 
-- Install docker.io - The Docker engine, used for running containers.
+    - Install python3-pip - This will install Python Software.
 
-- Install python3-pip - This will install Python Software.
+    - Install docker - this will install the Docker Python pip module
 
-- Install docker - this will install the Docker Python pip module
+    - Increase Virtual Memory - This increases virtual memory in the Elk container.
 
-- Increase Virtual Memory - This increases virtual memory in the Elk container.
+    - Download and Launch Elk Docker Container - This will download and start the sepb/elk:716 container on the Elk machine. 
 
-- Download and Launch Elk Docker Container - This will download and start the sepb/elk:716 container on the Elk machine. 
+    - Enable Docker System Service on Boot - This tells Docker to enable on boot-up.
+  
+    - Download and launch Elk docker container 
 
-- Enable Docker System Service on Boot - This tells Docker to enable on boot-up.
- 
- - Download and launch Elk docker container 
+
+- SSH into the ELK-VM to verify the server is up and running.
 
    
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
