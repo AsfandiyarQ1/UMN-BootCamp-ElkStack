@@ -46,7 +46,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | web-1               | Docker-dvwa                                        | 10.0.0.5  | 23.96.54.66    | Linux Ubuntu 18.04-LTS  |
 | web-2               | Docker-dvwa                                        | 10.0.0.8  | 23.96.54.66    | Linux Ubuntu 18.04-LTS  |
 | web-3               | Docker-dvwa                                        | 10.0.0.9  | 23.96.54.66    | Linux Ubuntu 18.04-LTS  |
-| Elk                 | Elk Stack- Elasticsearch, Kibana                   | 10.1.0.4  | 20.62.66.148   | Linux Ubuntu 18.04-LTS  |
+| Elk                 | Elk Stack - Elasticsearch, Kibana                  | 10.1.0.4  | 20.62.66.148   | Linux Ubuntu 18.04-LTS  |
 | Load Balancer       | Load balances web-1,2, and 3                       |           | 23.96.54.66    |                         |
 
 ### Access Policies
@@ -54,7 +54,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-71.193.70.49 SSH via port 22
+My home IP SSH via port 22
 ELK server through 5601
 
 Machines within the network can only be accessed by the Jumpbox using SSH through port 22.
@@ -64,11 +64,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                | Publicly Accessible | Allowed IP Addresses      |
 |---------------------|---------------------|---------------------------|
-| Jumbox Provisioner  | Yes                 | SSH from 71.193.70.49     |
+| Jumbox Provisioner  | Yes                 | SSH from my home IP       |
 | web-1               | No                  | 10.1.0.4                  |
 | web-2               | No                  | 10.1.0.4                  |
 | web-3               | No                  | 10.1.0.4                  |
-| Elk                 | No                  | 71.193.70.49 through 5601 |
+| Elk                 | No                  | my home IP -through 5601  |
 
 ### Elk Configuration
 
@@ -125,6 +125,6 @@ SSH into the control node and follow the steps below:
 _TODO: Answer the following questions to fill in the blanks:_
 - Playbook can be downloaded using the curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
 - update hosts file within /etc/ansible and include the IPs of the Webservers
-- http://20.62.66.148.IP]:5601/app/kibana
+- http://elk.piblic.ip]:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
